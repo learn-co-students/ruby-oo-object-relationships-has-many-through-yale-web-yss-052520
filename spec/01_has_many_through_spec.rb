@@ -19,7 +19,6 @@ describe "Basic class structures" do
       it "is class method that returns the contents of @@all" do
         expect(Customer.all).to eq([])
         ian = Customer.new("Ian", 30)
-      
         expect(Customer.all).to eq([ian])
         niky = Customer.new("Niky", 28)
         expect(Customer.all).to eq([ian, niky])
